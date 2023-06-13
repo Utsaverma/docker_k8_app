@@ -1,1 +1,0 @@
-# docker_k8_app

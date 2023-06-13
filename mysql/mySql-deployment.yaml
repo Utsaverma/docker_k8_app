@@ -1,0 +1,32 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: utsav-mysql-deployment
+spec:
+  strategy:
+    type: Recreate
+  replicas: 1
+  selector:
+    matchLabels:
+      app: utsav-mysql
+  template:
+    metadata:
+      labels:
+        app: utsav-mysql
+    spec:
+      volumes:
+        - name: mysql-storage
+          persistentVolumeClaim:
+            claimName: utsav-mysql-pv-claim
+      
+      containers:
+      - name: utsav-mysql
+        image: utsavaishuverma/utsav-mysql-image:1
+        ports:
+        - containerPort: 3306
+        envFrom:
+          - secretRef:
+              name: mysql-secret
+        volumeMounts:
+        - name: mysql-storage
+          mountPath: /var/lib/mysql
