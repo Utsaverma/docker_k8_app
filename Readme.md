@@ -16,7 +16,7 @@ URL for Service API tier to view the records from backend tier:
 
 ---------------docker commands to build image---------------------
 
-docker run --name utsav-mysql-container -e MYSQL_ROOT_PASSWORD=Utsav@123 -d mysql
+docker run --name utsav-mysql-container -e MYSQL_ROOT_PASSWORD=<MYSQL_PASS> -d mysql
 docker exec -it utsav-mysql-container bash
 
 CREATE DATABASE DevopsAssignment;
@@ -57,7 +57,7 @@ docker push utsavaishuverma/utsav-mysql-image:1
 
 
 
-docker run  --name utsav-mysql-container -e MYSQL_ROOT_PASSWORD=Utsav@123 -p 3306:3306 -d utsavaishuverma/utsav-mysql-image:1
+docker run  --name utsav-mysql-container -e MYSQL_ROOT_PASSWORD=<MYSQL_PASS> -p 3306:3306 -d utsavaishuverma/utsav-mysql-image:1
 
 
 
