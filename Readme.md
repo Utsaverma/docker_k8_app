@@ -6,7 +6,7 @@ Docker hub URL for docker images:
   node app image: https://hub.docker.com/repository/docker/utsavaishuverma/utsav-node-app
 
 URL for Service API tier to view the records from backend tier:
-  http://34.123.160.239/getUsers
+  http://34.136.244.41/getUsers
 
 
 
