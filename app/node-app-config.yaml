@@ -6,5 +6,5 @@ metadata:
     app: "node-app-settings"
 data:
   MYSQL_USER: "root"
-  DB_HOST: "mysql-service"
+  DB_HOST: "utsav-mysql-statefulset-0.utsav-mysql-headless.default.svc.cluster.local"
   DB_PORT: "3306"

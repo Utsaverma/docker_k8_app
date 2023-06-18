@@ -12,6 +12,13 @@ URL for Service API tier to view the records from backend tier:
 
 
 
+------------About the application------------------
+
+- I have used node js for building Service APIs and MySQL as DB
+- Node app is deployed using deployment while db is deployed using statefulset
+- For data presistent storage I am using GCP Disk
+- Used configMap and secrets for vals and pass
+
 
 
 ---------------docker commands to build image---------------------

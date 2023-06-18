@@ -3,8 +3,9 @@ kind: PersistentVolumeClaim
 metadata:
   name: utsav-mysql-pv-claim
 spec:
+  storageClassName: mysql-pv
   accessModes:
     - ReadWriteOnce
   resources:
     requests:
-      storage: 1Gi
+      storage: 10Gi

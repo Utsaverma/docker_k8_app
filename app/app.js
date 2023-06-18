@@ -4,7 +4,7 @@ const app = express();
 app.use(express.json());
 
 const CONNECTION = {
-  DB_HOST: 'mysql-service',
+  DB_HOST: 'utsav-mysql-statefulset-0.utsav-mysql-headless.default.svc.cluster.local',
   DB_PORT: 3306,
   MYSQL_USER: 'root',
   MYSQL_ROOT_PASSWORD: 'VXRzYXZAMTIz',
